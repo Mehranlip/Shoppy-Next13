@@ -1,4 +1,6 @@
 import localFont from "@next/font/local"
+import { StoreProvider } from "@/redux/StoreProvider"
+import App from "@/components/App"
 
 import './globals.css'
 
@@ -16,7 +18,13 @@ const vazirFont = localFont({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${vazirFont.className} bg-slate-950 text-slate-100`}>
-      <body >{children}</body>
+      <body >
+        <StoreProvider>
+          <App>
+            {children}
+          </App>
+        </StoreProvider>
+      </body>
     </html>
   )
 }

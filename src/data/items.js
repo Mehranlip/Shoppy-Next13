@@ -2,31 +2,59 @@ export const items = {
     products: [
         {
             id: '1',
-            title: " محصول",
-            price: 389,
-            image: "/images/product.jpg",
-            count: 5
+            title: 'Airpods Max',
+            price: 299,
+            image: '/images/airpods-max.jpg',
+            count: 3,
         },
         {
             id: '2',
-            title: " محصول",
-            price: 499,
-            image: "/images/product.jpg",
-            count: 3
+            title: 'Airpods Pro',
+            price: 99,
+            image: '/images/airpods.jpg',
+            count: 5,
         },
         {
             id: '3',
-            title: " محصول",
-            price: 299,
-            image: "/images/product.jpg",
-            count: 7
+            title: 'Beats',
+            price: 399,
+            image: '/images/beats.jpg',
+            count: 2,
         },
         {
             id: '4',
-            title: " محصول",
-            price: 395,
-            image: "/images/product.jpg",
-            count: 1
+            title: 'Creative',
+            price: 199,
+            image: '/images/creative.jpg',
+            count: 8,
         },
-    ]
+        {
+            id: '5',
+            title: 'Philips',
+            price: 299,
+            image: '/images/philips.jpg',
+            count: 6,
+        },
+        {
+            id: '6',
+            title: 'Razer',
+            price: 289,
+            image: '/images/razer.jpg',
+            count: 3,
+        },
+        {
+            id: '7',
+            title: 'Rode',
+            price: 359,
+            image: '/images/rode.jpg',
+            count: 2,
+        },
+        {
+            id: '8',
+            title: 'Sony',
+            price: 399,
+            image: '/images/sony.jpg',
+            count: 5,
+        },
+    ],
 }

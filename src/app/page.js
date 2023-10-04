@@ -1,5 +1,6 @@
 import { items } from '@/data/items'
-import ProductItem from '@/components/productItem'
+import ProductItem from '@/components/ProductItem'
+
 
 
 function Home() {
@@ -7,11 +8,13 @@ function Home() {
 
 
   return (
-    <div className='container grid grid-cols-4 m-auto pt-6'>
-      {products.map((item) => (
-        <ProductItem key={item.id} product={item} />
-      ))}
-    </div>
+    <>
+      <div className='container grid grid-cols-4 m-auto pt-6'>
+        {products.map((item) => (
+          <ProductItem key={item.id} product={item} />
+        ))}
+      </div>
+    </>
   )
 }
 
