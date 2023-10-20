@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import AddToCart from "./AddToCart"
 
 function ProductItem({ product }) {
     return (
@@ -11,9 +12,7 @@ function ProductItem({ product }) {
                     <h2 className="text-lg ">{product.title}</h2>
                 </Link>
                 <p className="mt-2 rtl text-slate-300  ">{product.price} تومان</p>
-                <button className="border border-slate-300 text-slate-300 rounded-lg px-3 py-2 mt-3 hover:bg-slate-800 ">
-                    افزودن به سبد خرید
-                </button>
+                <AddToCart product={product} />
             </div>
         </div>
     )
