@@ -15,12 +15,14 @@ function Navbar() {
                 <Link href="/" className="text-lg">
                     Headphone Market
                 </Link>
-                <Link href="/cart" className="text-lg">
-                    <span className="p-2">
-                        {cartItems.reduce((acc, cur) => acc + cur.qty, 0)}
-                    </span>
-                    سبد خرید
-                </Link>
+                <div className="border border-slate-500 px-2 py-1 rounded-lg bg-slate-900">
+                    <Link href="/cart" className="text-lg">
+                        <span className="px-2">
+                            ( {cartItems.reduce((acc, cur) => acc + cur.qty, 0)} )
+                        </span>
+                        سبد خرید
+                    </Link>
+                </div>
             </nav>
         </header>
     )
