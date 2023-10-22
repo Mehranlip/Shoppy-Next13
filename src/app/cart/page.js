@@ -3,6 +3,7 @@
 
 import { useDispatch, useSelector } from "react-redux"
 import { removeFromCart } from "@/redux/slices/cartSlice"
+import Image from "next/image"
 
 
 
@@ -27,9 +28,10 @@ function CartPage() {
                 </div>
                 <div>
                     <table className="min-w-full mx-4 rtl bg-slate-800 text-slate-300 rounded-lg">
-                        <tbody className="p-2">
+                        <tbody className="p-5">
                             {cartItems.map((item) => (
                                 <tr key={item.id}>
+                                    <td className="p-5"><Image className="rounded-lg" src={item.image} width={100} height={100} /></td>
                                     <td className="p-5">{item.title}</td>
                                     <td className="p-5 text-right">{item.price}</td>
                                     <td className="p-5 text-center">
